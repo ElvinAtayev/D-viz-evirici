@@ -1,0 +1,7 @@
+kurlar = {"USD": 1.0, "EUR": 0.92, "TRY": 34.5}
+
+def cevir(miktar, from_curr, to_curr):
+    usd = miktar / kurlar[from_curr]
+    return usd * kurlar[to_curr]
+
+print(cevir(100, "USD", "TRY"))
